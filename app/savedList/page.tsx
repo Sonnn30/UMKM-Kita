@@ -27,7 +27,7 @@ export default function SavedList(){
             </div>
 
             {/* table header */}
-            <div className="grid grid-cols-8 items-center font-semibold text-black text-lg border-2 mb-3 border-[#FF8E3C] rounded-md text-stroke-orange">
+            <div className="grid grid-cols-8 items-center font-semibold text-black text-lg border-2 border-[#FF8E3C] rounded-md text-stroke-orange">
                 {/* <div className="col-span-1 text-center">Photo</div> */}
                 <div className="col-span-3">Nama UMKM</div>
                 <div className="col-span-1">Kategori</div>
@@ -55,6 +55,26 @@ export default function SavedList(){
             operational_hours="08:00 - 22:00"
             rating={4.9}
             />
+            <UmkmTable
+            photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
+            name="Kopi Nusantara"
+            location="Bandung"
+            category="Kuliner"
+            best_seller="Kopi Susu Gula Aren"
+            operational_hours="08:00 - 22:00"
+            rating={4.9}
+            />
+
+            <UmkmTable
+            photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
+            name="Kopi Nusantara"
+            location="Bandung"
+            category="Kuliner"
+            best_seller="Kopi Susu Gula Aren"
+            operational_hours="08:00 - 22:00"
+            rating={4.9}
+            />
+
             <UmkmTable
             photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
             name="Kopi Nusantara"

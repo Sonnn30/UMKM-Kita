@@ -20,7 +20,7 @@ export default function UmkmTable({
     rating,
 }: UmkmProps) {
     return (
-        <div className="grid grid-cols-8 items-center gap-4 py-3 border-b border-b-[#FF8E3C] border-gray-200 hover:bg-gray-50 transition">
+        <div className="grid grid-cols-8 items-center gap-4 py-3 text-stroke-orange border border-[#FF8E3C] rounded-md hover:bg-gray-50 transition">
             {/* Photo */}
             <div className="col-span-1 flex justify-center">
                 <img
@@ -49,7 +49,7 @@ export default function UmkmTable({
             <div className="col-span-1 font-medium text-yellow-600">⭐ {rating}/5</div>
 
             {/* Links & Icons */}
-            <div className="col-span-1 flex gap-3 justify-center">
+            <div className="col-span-1 flex gap-3 justify-center text-stroke-default">
                 <a href="#" className="text-blue-500 hover:text-blue-700">
                 Link
                 </a>
