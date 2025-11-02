@@ -14,9 +14,14 @@ export default function SavedList(){
         best_seller: string;
         operational_hours: string;
         rating: number;
+        link_map: string;
     }
 
     const [umkmList, setUmkmList] = useState<Umkm[]>([]);
+    const [selectedMap, setSelectedMap] = useState(
+        // default binus
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63463.503352476786!2d106.7817067388932!3d-6.20169773649652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%20Kampus%20Anggrek!5e0!3m2!1sid!2sid!4v1762088187646!5m2!1sid!2sid"
+    );
 
 
     useEffect(() => {
@@ -28,7 +33,7 @@ export default function SavedList(){
 
     return (
         <div className="absolute w-[87%] flex-column m-5 ml-30">
-            <MapEmbed/>
+            <MapEmbed mapSrc={selectedMap}/>
             <h3 className="my-2 font-semibold">Daftar UMKM</h3>
 
             <div className="flex justify-between mb-2">
@@ -38,13 +43,14 @@ export default function SavedList(){
 
                 <div>
                     {/*idk, nanti baru ganti 👍👍*/}
-                    <select name="kategori-umkm" id="kategori-umkm" className="border rounded-sm">  
+                    <select name="kategori-umkm" id="kategori-umkm" className="border rounded-sm">
                         <option value="kuliner">Kuliner</option>
-                        <option value="minimarket">Minimarket</option>
-                        <option value="konveksi">Konveksi</option>
-                        <option value="agrobisnis">Agrobisnis</option>
-                        <option value="kerajinan-tangan">Kerajinan Tangan</option>
-                        <option value="travel">Travel</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="kerajinan">Kerajinan Tangan</option>
+                        <option value="kecantikan">Kecantikan & Perawatan</option>
+                        <option value="jasa">Jasa</option>
+                        <option value="pertanian-peternakan">Pertanian & Peternakan</option>
+                        <option value="perdagangan">Perdagangan/Retail</option>
                     </select>
                 </div>
             </div>
@@ -60,66 +66,23 @@ export default function SavedList(){
                 <div className="col-span-1">Aksi</div>
             </div>
 
-
+            {/* map semua umkm yang di-save, klo di klik posisi map bakal berubah */}
             {umkmList.map((umkm) => (
-                <UmkmTable
-                    key={umkm.id}
-                    photo={umkm.photo}
-                    name={umkm.name}
-                    location={umkm.location}
-                    category={umkm.category}
-                    best_seller={umkm.best_seller}
-                    operational_hours={umkm.operational_hours}
-                    rating={umkm.rating}
-                />
+                <div key={umkm.id} onClick={() => {setSelectedMap(umkm.link_map); window.scrollTo({top: 0, behavior: "smooth"})}}
+                className="cursor-pointer">
+                    <UmkmTable
+                        key={umkm.id}
+                        photo={umkm.photo}
+                        name={umkm.name}
+                        location={umkm.location}
+                        category={umkm.category}
+                        best_seller={umkm.best_seller}
+                        operational_hours={umkm.operational_hours}
+                        rating={umkm.rating}
+                    />
+                </div>
+
             ))}
-            {/* <UmkmTable
-            photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
-            name="Kopi Nusantara"
-            location="Bandung"
-            category="Kuliner"
-            best_seller="Kopi Susu Gula Aren"
-            operational_hours="08:00 - 22:00"
-            rating={4.9}
-            />
-            <UmkmTable
-            photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
-            name="Kopi Nusantara"
-            location="Bandung"
-            category="Kuliner"
-            best_seller="Kopi Susu Gula Aren"
-            operational_hours="08:00 - 22:00"
-            rating={4.9}
-            />
-            <UmkmTable
-            photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
-            name="Kopi Nusantara"
-            location="Bandung"
-            category="Kuliner"
-            best_seller="Kopi Susu Gula Aren"
-            operational_hours="08:00 - 22:00"
-            rating={4.9}
-            />
-
-            <UmkmTable
-            photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
-            name="Kopi Nusantara"
-            location="Bandung"
-            category="Kuliner"
-            best_seller="Kopi Susu Gula Aren"
-            operational_hours="08:00 - 22:00"
-            rating={4.9}
-            />
-
-            <UmkmTable
-            photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
-            name="Kopi Nusantara"
-            location="Bandung"
-            category="Kuliner"
-            best_seller="Kopi Susu Gula Aren"
-            operational_hours="08:00 - 22:00"
-            rating={4.9}
-            /> */}
         </div>
     )
 }

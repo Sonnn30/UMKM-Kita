@@ -2,34 +2,121 @@
     {
         "id":1,
         "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
-        "name":"Kopi Nusantara",
-        "location":"Bandung",
+        "name":"Ayam Keprabon Express",
+        "location":"Jakarta Barat",
         "category":"Kuliner",
-        "best_seller":"Kopi Susu Gula Aren",
-        "operational_hours":"08:00 - 22:00",
-        "rating":4.9
+        "best_seller":"Paket Geprek",
+        "operational_hours":"07:00 - 12:00",
+        "rating":4.6,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.9040722157782!2d106.78241489999999!3d-6.2022034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcb4d4c489%3A0xa8054e4961cdbf10!2sAyam%20Keprabon%20Express!5e0!3m2!1sen!2sid!4v1762093650494!5m2!1sen!2sid"
     },
 
     {
         "id":2,
         "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
-        "name":"Kopi Jakarta",
-        "location":"Jakarta",
+        "name":"Geisha The Sushi House",
+        "location":"Jakarta Barat",
         "category":"Kuliner",
-        "best_seller":"Kopi Susu Gula Aren",
-        "operational_hours":"08:00 - 22:00",
-        "rating":4.9
+        "best_seller":"Salmon Roll, Curry Ramen",
+        "operational_hours":"11:30 - 23:30",
+        "rating":4.4,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8080489742865!2d106.78208080566601!3d-6.20230490562074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f789ab2b9e6d%3A0x722150d54e3fef82!2sGeisha%20The%20Sushi%20House!5e0!3m2!1sen!2sid!4v1762094770008!5m2!1sen!2sid"
     },
 
     {
         "id":3,
         "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
-        "name":"Kopi Madura",
-        "location":"Madura",
+        "name":"Warteg Ibu Rama",
+        "location":"Jakarta Barat",
         "category":"Kuliner",
-        "best_seller":"Kopi Susu Gula Aren",
-        "operational_hours":"08:00 - 22:00",
-        "rating":4.9
+        "best_seller":"Telor Balado, Oreg Tempe Basah",
+        "operational_hours":"06:30 - 21:00",
+        "rating":4.0,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d263.26053810590594!2d106.78160553516317!3d-6.202348048850692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcb744e671%3A0x4dcbd45d158c1078!2sWarteg%20Ibu%20Rama!5e0!3m2!1sen!2sid!4v1762094968577!5m2!1sen!2sid"
+    },
+
+    {
+        "id":4,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Rumah Makan Bude",
+        "location":"Jakarta Barat",
+        "category":"Kuliner",
+        "best_seller":"Bihun, Ayam Goreng",
+        "operational_hours":"06:00 - 22:00",
+        "rating":4.4,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8075665235721!2d106.78123099999999!3d-6.202817899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcb9829a01%3A0x7757012176282e56!2sRumah%20Makan%20Bude!5e0!3m2!1sen!2sid!4v1762095496285!5m2!1sen!2sid"
+    },
+
+    {
+        "id":5,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Kwetiau 79",
+        "location":"Jakarta Barat",
+        "category":"Kuliner",
+        "best_seller":"Kwetiau Siram Sapi, Nasi Goreng Spesial",
+        "operational_hours":"08:15 - 19:00",
+        "rating":4.4,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.9039714357713!2d106.78086890782859!3d-6.2024177292909455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcbe8f7a57%3A0x9feb05e4c4111047!2sKwetiau%2079!5e0!3m2!1sen!2sid!4v1762095681001!5m2!1sen!2sid"
+    },
+
+    {
+        "id":6,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Cakra Motor",
+        "location":"Jakarta Barat",
+        "category":"Jasa",
+        "best_seller":"Tambal/Pompa Ban",
+        "operational_hours":"09:00 - 17:00",
+        "rating":5,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.86304204733023!2d106.78101568436507!3d-6.202419457429467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcbe0eba23%3A0xdac46d918010738c!2sCakra%20Motor%20Stel%20Pelk%20Tambal%20Ban%20Dll!5e0!3m2!1sen!2sid!4v1762096066759!5m2!1sen!2sid"
+    },
+
+    {
+        "id":7,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Es Campur Juara",
+        "location":"Jakarta Barat",
+        "category":"Kuliner",
+        "best_seller":"Es Teler",
+        "operational_hours":"08:00 - 20:00",
+        "rating":4.3,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.86304204733023!2d106.78101568436507!3d-6.202419457429467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dc95f8353f%3A0x63f37f83489c78e!2sIce%20Mixed%20Champion!5e0!3m2!1sen!2sid!4v1762096162218!5m2!1sen!2sid"
+    },
+
+    {
+        "id":8,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Agen Telur & Kedai Sayur AA",
+        "location":"Jakarta Barat",
+        "category":"Retail",
+        "best_seller":"Telur",
+        "operational_hours":"08:00 - 21:00",
+        "rating":5,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.8630608349236!2d106.78075548160658!3d-6.202379815613416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f71b26091609%3A0xba223be26d6b1c89!2sAgen%20telur%20%26%20Kedai%20Sayur%20AA!5e0!3m2!1sen!2sid!4v1762096295484!5m2!1sen!2sid"
+    },
+
+    {
+        "id":9,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"KULMN Barbershop Binus",
+        "location":"Jakarta Barat",
+        "category":"Jasa",
+        "best_seller":"Pangkas",
+        "operational_hours":"11:00 - 22:00",
+        "rating":5,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.90391644503148!2d106.7797025089672!3d-6.2025346752320925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7000c74e89b%3A0x63816d9a4053f124!2sKULMN%20BARBERSHOP%20BINUS!5e0!3m2!1sen!2sid!4v1762096401895!5m2!1sen!2sid"
+    },
+
+    {
+        "id":10,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"ADA Vape Store Kemanggisan",
+        "location":"Jakarta Barat",
+        "category":"Retail",
+        "best_seller":"Vape Pods, Liquid Refill",
+        "operational_hours":"08:00 - 12:00",
+        "rating":5,
+        "link_map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.9040140981124!2d106.78272419999999!3d-6.2023269999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7c440cd82ff%3A0xab2f5cfc92c74948!2sADA%20Vape%20Store%20Kemanggisan!5e0!3m2!1sen!2sid!4v1762096729848!5m2!1sen!2sid"
     }
 
 ]

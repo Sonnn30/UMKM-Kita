@@ -8,7 +8,7 @@ const PORT = 5000;
 app.use(cors());
 
 // Load the JSON data
-const data = JSON.parse(fs.readFileSync("./umkm.json", "utf8"));
+const data = JSON.parse(fs.readFileSync("./backend/umkm.json", "utf8"));
 
 // Get all UMKM
 app.get("/api/umkm", (req, res) => {
