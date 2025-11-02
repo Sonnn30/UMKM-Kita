@@ -1,0 +1,35 @@
+[
+    {
+        "id":1,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Kopi Nusantara",
+        "location":"Bandung",
+        "category":"Kuliner",
+        "best_seller":"Kopi Susu Gula Aren",
+        "operational_hours":"08:00 - 22:00",
+        "rating":4.9
+    },
+
+    {
+        "id":2,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Kopi Jakarta",
+        "location":"Jakarta",
+        "category":"Kuliner",
+        "best_seller":"Kopi Susu Gula Aren",
+        "operational_hours":"08:00 - 22:00",
+        "rating":4.9
+    },
+
+    {
+        "id":3,
+        "photo":"https://placehold.co/400x300/cccccc/969696.png?font=lato",
+        "name":"Kopi Madura",
+        "location":"Madura",
+        "category":"Kuliner",
+        "best_seller":"Kopi Susu Gula Aren",
+        "operational_hours":"08:00 - 22:00",
+        "rating":4.9
+    }
+
+]

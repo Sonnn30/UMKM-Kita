@@ -11,14 +11,16 @@ interface UmkmProps {
 }
 
 export default function UmkmTable({
-    photo,
-    name,
-    location,
-    category,
-    best_seller,
-    operational_hours,
-    rating,
-}: UmkmProps) {
+        photo,
+        name,
+        location,
+        category,
+        best_seller,
+        operational_hours,
+        rating,
+    }: UmkmProps) {
+
+        
     return (
         <div className="grid grid-cols-8 items-center gap-4 py-3 text-stroke-orange border border-[#FF8E3C] rounded-md hover:bg-gray-50 transition">
             {/* Photo */}

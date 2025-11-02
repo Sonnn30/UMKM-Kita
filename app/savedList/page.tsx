@@ -1,8 +1,31 @@
+"use client";
 import MapEmbed from "./map-embed"
 import UmkmTable from "./umkm-table"
 import "./page.css"
+import { useEffect, useState } from "react";
 
 export default function SavedList(){
+    interface Umkm {
+        id: number;
+        photo: string;
+        name: string;
+        location: string;
+        category: string;
+        best_seller: string;
+        operational_hours: string;
+        rating: number;
+    }
+
+    const [umkmList, setUmkmList] = useState<Umkm[]>([]);
+
+
+    useEffect(() => {
+        fetch("http://localhost:5000/api/umkm")
+        .then((res) => res.json())
+        .then((data) => setUmkmList(data))
+        .catch((err) => console.error("Error fetching UMKM data:", err));
+    }, []);
+
     return (
         <div className="absolute w-[87%] flex-column m-5 ml-30">
             <MapEmbed/>
@@ -37,7 +60,20 @@ export default function SavedList(){
                 <div className="col-span-1">Aksi</div>
             </div>
 
-            <UmkmTable
+
+            {umkmList.map((umkm) => (
+                <UmkmTable
+                    key={umkm.id}
+                    photo={umkm.photo}
+                    name={umkm.name}
+                    location={umkm.location}
+                    category={umkm.category}
+                    best_seller={umkm.best_seller}
+                    operational_hours={umkm.operational_hours}
+                    rating={umkm.rating}
+                />
+            ))}
+            {/* <UmkmTable
             photo="https://placehold.co/400x300/cccccc/969696.png?font=lato"
             name="Kopi Nusantara"
             location="Bandung"
@@ -83,7 +119,7 @@ export default function SavedList(){
             best_seller="Kopi Susu Gula Aren"
             operational_hours="08:00 - 22:00"
             rating={4.9}
-            />
+            /> */}
         </div>
     )
 }
