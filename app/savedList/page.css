@@ -1,0 +1,14 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.text-stroke-orange {
+  color: black;
+  -webkit-text-stroke: 0.5px #FF8E3C;
+}
+
+.text-stroke-default {
+  color: inherit;
+  -webkit-text-stroke: 0.1px currentColor;
+}
